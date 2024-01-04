@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DahuyActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txt_chitietdonhang"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:text="Chi tiết đơn hàng"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <RelativeLayout
+                android:id="@+id/relative_gioithieu"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_below="@+id/txt_chitietdonhang"
+                android:background="@color/green">
+
+                <RelativeLayout
+                    android:id="@+id/rela_mota"
+                    android:layout_width="257dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp">
+                    <TextView
+                        android:id="@+id/txt_dangvanchuyen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đơn hàng đã bị hủy"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+                        android:textColor="@color/white"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/txt_gioithieu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_dangvanchuyen"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/extralight"
+                        android:gravity="center"
+                        android:text="Vào ngày 23/10/2023 lúc 12:01pm."
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_truck"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_toRightOf="@+id/rela_mota"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_dahuy"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_thongtindonhang"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_gioithieu"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:id="@+id/txt_thongtindonhang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thông tin đơn hàng"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_thongtindonhang"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/border_background"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/txt_madonhang"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:text="Mã đơn hàng"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="14dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DH04"
+                            android:layout_toRightOf="@+id/txt_madonhang"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="14dp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative_time_dathang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/txt_time_dathang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thời gian đặt hàng"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="14dp"/>
+
+                        <TextView
+                            android:id="@+id/ngaydat"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="23/10/2023, 11:50am"
+                            android:layout_toRightOf="@+id/txt_time_dathang"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="14dp"
+                            android:gravity="right"/>
+
+                        <View
+                            android:layout_width="350dp"
+                            android:layout_height="1dp"
+                            android:background="@color/black"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/txt_time_dathang"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycle_dahuy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp">
+                        </androidx.recyclerview.widget.RecyclerView>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="350dp"
+                        android:layout_height="1dp"
+                        android:background="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_tongdonhang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="Đã hủy"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="159dp"
+                        android:textColor="@color/red"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/txt_phivanchuyen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yêu cầu bởi"
+                            android:layout_marginLeft="14dp"
+                            android:layout_centerVertical="true"/>
+
+                        <TextView
+                            android:id="@+id/txt_giavanchuyen"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/txt_phivanchuyen"
+                            android:text="Nguyễn Tấn Phát"
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerVertical="true"
+                            android:gravity="right"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/txt_voucher"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hủy lúc"
+                            android:layout_marginLeft="14dp"
+                            android:layout_centerVertical="true"/>
+
+                        <TextView
+                            android:id="@+id/ngayhuy"
+                            android:layout_width="275dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/txt_voucher"
+                            android:text="23/10/2023, 12:01pm"
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerVertical="true"
+                            android:gravity="right"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/txt_thanhtien"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lý do"
+                            android:layout_marginLeft="14dp"
+                            android:layout_centerVertical="true"/>
+
+                        <TextView
+                            android:id="@+id/txt_lydo"
+                            android:layout_width="290dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/txt_thanhtien"
+                            android:text="Tôi có việc bận, không thể nhận hàng."
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerVertical="true"
+                            android:gravity="right"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_nhanduocmon"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/relative_thongtindonhang"
+                android:layout_centerHorizontal="true"
+                android:text="Đặt lại"
+                android:textSize="18dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/hcn"
+                android:gravity="center"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white"
+        app:menu="@menu/navigation_menu_bottom"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhuongthucthanhtoanActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                    android:id="@+id/header_phuongthucthanhtoan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_BGthanhtoan"
+                            android:layout_width="match_parent"
+                            android:layout_height="237dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/background_phuonhthucthanhtoan"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints" />
+
+                        <ImageView
+                            android:id="@+id/button_back"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_backbutton"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="108dp"
+                            android:layout_height="108dp"
+                            android:src="@drawable/avt"
+                            app:layout_constraintBottom_toBottomOf="@+id/img_BGthanhtoan"
+                            app:layout_constraintEnd_toEndOf="@+id/img_BGthanhtoan"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="@+id/img_BGthanhtoan"
+                            app:layout_constraintTop_toTopOf="@+id/img_BGthanhtoan"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <TextView
+                            android:id="@+id/txt_ten_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            android:paddingRight="5dp"
+                            android:text="Phát Nguyễn"
+                            android:textColor="@color/white"
+                            android:textSize="25dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/header_thongtincanhan">
+
+                    <LinearLayout
+                        android:id="@+id/form_thongtinthanhtoan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/hcn"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/tieude_form"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tx_thongtinthanhtoan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:gravity="center"
+                                    android:paddingLeft="0dp"
+                                    android:paddingTop="5dp"
+                                    android:text="Thông Tin Thanh Toán"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="40dp"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <Button
+                                    android:id="@+id/button_themthe"
+                                    android:layout_width="370dp"
+                                    android:layout_height="80dp"
+                                    android:background="@drawable/custom_button_white"
+                                    android:drawablePadding="8dp"
+                                    android:paddingStart="16dp"
+                                    android:paddingEnd="16dp"
+                                    android:text="Thêm thẻ Tín dụng/Ghi nợ"
+                                    android:textColor="@color/black"
+                                    android:textSize="19dp" />
+
+                                <ImageView
+                                    android:id="@+id/img_the"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="start|top"
+                                    android:paddingLeft="10dp"
+                                    android:paddingTop="10dp"
+                                    android:src="@drawable/credit_card1" />
+
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingTop="15dp">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <Button
+                                    android:id="@+id/button_lienketmomo"
+                                    android:layout_width="370dp"
+                                    android:layout_height="80dp"
+                                    android:background="@drawable/custom_button_white"
+                                    android:drawablePadding="8dp"
+                                    android:paddingStart="16dp"
+                                    android:paddingEnd="16dp"
+                                    android:text="Liên kết MoMo"
+                                    android:textColor="@color/black"
+                                    android:textSize="19dp" />
+
+                                <ImageView
+                                    android:id="@+id/img_momo"
+                                    android:layout_width="55dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="start|top"
+                                    android:paddingLeft="10dp"
+                                    android:paddingTop="10dp"
+                                    android:src="@drawable/ic_momo" />
+
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingTop="15dp">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <Button
+                                    android:id="@+id/button_thanhtoankhac"
+                                    android:layout_width="370dp"
+                                    android:layout_height="80dp"
+                                    android:background="@drawable/custom_button_white"
+                                    android:drawablePadding="8dp"
+                                    android:paddingStart="16dp"
+                                    android:text="Khác"
+                                    android:paddingEnd="16dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="19dp" />
+
+                                <ImageView
+                                    android:id="@+id/img_khac"
+                                    android:layout_width="55dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="start|top"
+                                    android:paddingLeft="10dp"
+                                    android:paddingTop="10dp"
+                                    android:src="@drawable/ic_thanhtoankhac" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

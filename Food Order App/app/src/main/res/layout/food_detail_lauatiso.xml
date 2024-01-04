@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints"  >
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="392dp"
+        android:layout_height="722dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/linear_totalprice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_food"
+                    android:layout_width="413dp"
+                    android:layout_height="276dp"
+                    android:background="@drawable/round_anh"
+                    android:src="@drawable/img_1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="260dp"
+                    android:background="@drawable/rounded"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="23dp"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/star"
+                            tools:layout_editor_absoluteX="156dp"
+                            tools:layout_editor_absoluteY="297dp" />
+
+                        <TextView
+                            android:id="@+id/feedback"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="5"
+                            tools:layout_editor_absoluteX="200dp"
+                            tools:layout_editor_absoluteY="297dp"
+                            android:textSize="20dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="260dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/rounded"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="290dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/dec"
+                            android:layout_width="28dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rounded1"
+                            android:src="@drawable/baseline_horizontal_rule_24" />
+
+                        <TextView
+                            android:id="@+id/val"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/inc"
+                            android:layout_width="28dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rounded1"
+                            android:src="@drawable/baseline_add_24" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="211dp"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="304dp"
+                    android:text="Lẩu Atiso"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="296dp"
+                    android:layout_marginEnd="4dp"
+                    android:gravity="center"
+                    android:text="185.000đ"
+                    android:textColor="@color/green"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="383dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="348dp"
+                    android:text="Nguyên liệu làm cơm hấp lá sen gồm: gạo dẻo, hạt sen tươi, đậu hà lan, cà rốt, nấm đùi gà"
+                    android:textSize="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="387dp"
+                    android:background="@color/grey"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/size"
+                    android:layout_width="56dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Size"
+                    android:textSize="21dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <RadioGroup
+                    android:id="@+id/radgroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="146dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/size">
+
+                    <RadioButton
+                        android:id="@+id/radS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Size S"/>
+
+                    <TextView
+                        android:layout_width="370dp"
+                        android:layout_height="1dp"
+                        android:background="@color/grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radM"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:text="Size M" />
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="+50.000đ"-->
+<!--                            tools:layout_editor_absoluteX="335dp"-->
+<!--                            tools:layout_editor_absoluteY="494dp" />-->
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="370dp"
+                        android:layout_height="1dp"
+                        android:background="@color/grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radL"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:text="Size L" />
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="+80.000đ" />-->
+                    </LinearLayout>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/grey"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/radgroup" />
+
+                <TextView
+                    android:id="@+id/note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Ghi chú cho quán"
+                    android:textSize="21dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView1" />
+
+                <EditText
+                    android:id="@+id/edit_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="2dp"
+                    android:backgroundTint="#c4c4c4"
+                    android:hint="Không bắt buộc"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/note" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear_totalprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/tongcong"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Tổng cộng"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="385.000đ"
+                android:textColor="@color/green"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginBottom="20dp"
+            android:background="#E8FFDA"
+            android:src="@drawable/cart" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <!-- <RelativeLayout
+        android:layout_width="411dp"
+        android:layout_height="453dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/img_food"
+        tools:layout_editor_absoluteX="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="Cơm hấp lá sen"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="110.000đ"
+                    android:textColor="@color/main"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Nguyên liệu làm cơm hấp lá sen gồm: gạo dẻo, hạt sen tươi, đậu hà lan, cà rốt, nấm đùi gà"
+
+        </LinearLayout>
+
+
+    </RelativeLayout> -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

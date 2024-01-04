@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_danhgia"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DanhgiaActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_huydon"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:gravity="center"
+                android:text="Đánh giá"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:background="@color/white"/>
+
+            <View
+                android:id="@+id/view_straight_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txt_huydon"
+                android:layout_centerHorizontal="true"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_thanks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cảm ơn bạn đã ghé đánh giá!"
+                android:textStyle="bold"
+                android:textSize="21dp"
+                android:textColor="@color/green_dam"
+                android:layout_below="@id/view_straight_line"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/txt_hailong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bạn hài lòng về món ăn chứ?"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_below="@id/txt_thanks"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"/>
+            
+            <RatingBar
+                android:id="@+id/rating_bar"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/txt_hailong"
+                android:layout_marginTop="12dp"
+                android:layout_centerHorizontal="true"
+                android:numStars="5"
+                android:rating="3"
+                android:stepSize="1"
+                android:progressTint="@color/yellow"/>
+
+            <TextView
+                android:id="@+id/txt_dieuhailong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Điều làm bạn hài lòng?"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_below="@id/rating_bar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"/>
+
+            <RelativeLayout
+                android:id="@+id/relative_dieuhailong"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_dieuhailong"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp">
+                <TextView
+                    android:id="@+id/txt_ngon"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:text="Ngon"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:background="@drawable/border_rating"/>
+
+                <TextView
+                    android:id="@+id/txt_giahoply"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:text="Giá cả hợp lý"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:layout_below="@id/txt_ngon"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/border_rating"/>
+
+                <TextView
+                    android:id="@+id/txt_giaohangnhanh"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:text="Giao hàng nhanh"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/txt_ngon"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/border_rating"/>
+
+                <TextView
+                    android:id="@+id/txt_phucvutot"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:text="Giá cả hợp lý"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:layout_below="@id/txt_giaohangnhanh"
+                    android:layout_toRightOf="@+id/txt_giahoply"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/border_rating"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_camnhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hãy để lại cảm nhận của bạn"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_below="@id/relative_dieuhailong"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/linear_vietcamnhan"
+                android:layout_width="370dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/txt_camnhan"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/frame_each_dish"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Viết cảm nhận của bạn"
+                    android:textSize="11dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_danhgia"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/linear_vietcamnhan"
+                android:layout_centerHorizontal="true"
+                android:text="Gửi đánh giá"
+                android:textSize="18dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/hcn_khungvien"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white"
+        app:menu="@menu/navigation_menu_bottom"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

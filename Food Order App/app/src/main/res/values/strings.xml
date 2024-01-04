@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FoodOrder_Project</string>
+    <string-array name="banks">
+        <item>BIDV</item>
+        <item>Agribank</item>
+    </string-array>
+    <string name="note">Lưu ý với trường hợp hủy đơn hàng đã thanh toán bằng thẻ:</string>
+    <string name="note1">Đơn hàng đã hủy của quý khách sẽ được ghi nhận và xử lý. Thời gian quý khách được
+    hoàn tiền sẽ theo quy định của ngân hàng (từ 10-14 ngày làm việc, không bao gồm T7, CN và Lễ)</string>
+    <string name="open">Drawer_Opened</string>
+    <string name="close">Drawer_Closed</string>
+    <string name="login">Login</string>
+</resources>

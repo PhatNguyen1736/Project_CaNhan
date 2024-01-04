@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="14dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_donhang1"
+            android:layout_width="54dp"
+            android:layout_height="42dp"
+            android:src="@drawable/ic_banhhoi"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/txt_monan"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_donhang1"
+            android:text="Bánh hỏi"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/txt_note"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_donhang1"
+            android:hint="Size S"
+            android:textSize="12dp"
+            android:layout_marginLeft="14dp"
+            android:layout_below="@id/txt_monan"/>
+
+        <TextView
+            android:id="@+id/txt_soluong"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_monan"
+            android:text="1"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txt_gia"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_soluong"
+            android:text="80.000đ"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:gravity="right"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DieukhoanActivity">
+
+    <LinearLayout
+        android:id="@+id/chinhsachgiaohang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/BG_chinhsachgiaohang"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/logo"/>
+        </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/BG_chinhsachgiaohang">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/tx_chinhsachgiaohang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Điều Khoản Sử Dụng"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="15dp"
+                android:text="1. Mục đích của ứng dụng:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:textSize="15dp"
+                android:text="Ứng dụng đặt đồ ăn này được phát triển để cung cấp một nền tảng thuận tiện cho người dùng để đặt và giao nhận đồ ăn từ các nhà hàng và cửa hàng địa phương. Chúng tôi cung cấp dịch vụ nhanh chóng và đáng tin cậy để đáp ứng nhu cầu ẩm thực của mọi người." />
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="15dp"
+                android:text="2. Điều khoản và điều kiện sử dụng:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:textSize="15dp"
+                android:text="Tuổi:
+        Người dùng phải đủ 18 tuổi trở lên để sử dụng ứng dụng.
+        Vi phạm bản quyền:
+        Không được sao chép, phân phối hoặc sử dụng bất kỳ nội dung nào trái phép hoặc vi phạm bản quyền trong ứng dụng." />
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="15dp"
+                android:text="3. Đăng ký và tài khoản:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="15dp"
+                android:text="Quy trình đăng ký:
+        Người dùng cần cung cấp thông tin cá nhân và tạo một tài khoản để sử dụng ứng dụng.
+        Bảo mật tài khoản:
+        Người dùng chịu trách nhiệm về bảo mật thông tin tài khoản của mình" />
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="15dp"
+                android:text="4. Quyền sở hữu trí tuệ:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="15dp"
+                android:text="Quyền sở hữu:
+        Tất cả quyền sở hữu trí tuệ liên quan đến ứng dụng và nội dung của nó thuộc sở hữu của chúng tôi." />
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="15dp"
+                android:text="5. Phí và thanh toán:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="15dp"
+                android:text="Phí dịch vụ:
+        Có thể áp dụng các khoản phí dịch vụ tùy thuộc vào loại dịch vụ và khu vực sử dụng.
+        Phương thức thanh toán:
+        Chúng tôi chấp nhận thanh toán qua các phương thức như thẻ tín dụng, thẻ ghi nợ hoặc các phương thức thanh toán điện tử khác." />
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="15dp"
+                android:text="6. Liên hệ:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="15dp"
+                android:text="Nếu bạn có bất kỳ câu hỏi hoặc ý kiến đóng góp nào về điều khoản sử dụng này, vui lòng liên hệ chúng tôi qua địa chỉ email: tueduyen@gmail.com" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

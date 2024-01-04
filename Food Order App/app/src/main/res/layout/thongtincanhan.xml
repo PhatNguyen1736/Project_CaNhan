@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThongtincanhanActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/header_thongtincanhan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_BGlogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="237dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/background_trangthongtincanhan"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="108dp"
+                        android:layout_height="108dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_BGlogin"
+                        app:layout_constraintEnd_toEndOf="@+id/img_BGlogin"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="@+id/img_BGlogin"
+                        app:layout_constraintTop_toTopOf="@+id/img_BGlogin"
+                        app:layout_constraintVertical_bias="1.0"
+                        android:src="@drawable/avt" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header_thongtincanhan">
+
+                <LinearLayout
+                    android:id="@+id/form_thongtincanhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/hcn"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/tieude_form"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tx_chaomung"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingLeft="0dp"
+                                android:paddingTop="5dp"
+                                android:text="Phát Nguyễn"
+                                android:textSize="25dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/edit">
+
+                            </ImageView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tx_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="25dp"
+                            android:paddingBottom="5dp"
+                            android:text="Email"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tx_email1"
+                            android:layout_width="360dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/hcn_login"
+                            android:drawableRight="@drawable/icon_edit"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:text="1736@gmail.com"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingTop="15dp">
+
+                        <TextView
+                            android:id="@+id/tx_sdt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="25dp"
+                            android:paddingBottom="5dp"
+                            android:text="Số điện thoại"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tx_sdt1"
+                            android:layout_width="360dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/hcn_login"
+                            android:drawableRight="@drawable/icon_edit"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:text="0918262525"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingTop="15dp">
+
+                        <TextView
+                            android:id="@+id/tx_gioitinh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="25dp"
+                            android:paddingBottom="5dp"
+                            android:text="Giới tính"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tx_gioitinh1"
+                            android:layout_width="360dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/hcn_login"
+                            android:drawableRight="@drawable/icon_edit"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:text="Nam"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingTop="15dp">
+
+                        <TextView
+                            android:id="@+id/tx_diachigiaohang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="25dp"
+                            android:paddingBottom="5dp"
+                            android:text="Địa chỉ giao hàng"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tx_diachigiaohang1"
+                            android:layout_width="360dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/hcn_login"
+                            android:drawableRight="@drawable/muiten"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:text="Khu phố 6, Linh Trung ,Thủ Đức"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="199dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingTop="15dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="25dp"
+                            android:layout_gravity="center_horizontal">
+                            <TextView
+                                android:id="@+id/tx_ngaysinh"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="6dp"
+                                android:paddingBottom="5dp"
+                                android:text="Ngày sinh"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tx_ngaysinh1"
+                                android:layout_width="360dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/hcn_login"
+                                android:drawableRight="@drawable/icon_edit"
+                                android:gravity="center"
+                                android:textSize="20dp"
+                                android:text="29/06/2002"/>
+                        </LinearLayout>
+                        <Button
+                            android:id="@+id/button_update"
+                            android:layout_width="300dp"
+                            android:layout_height="55dp"
+                            android:background="@drawable/custom_button_white"
+                            android:text="Cập Nhật"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:textSize="19dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

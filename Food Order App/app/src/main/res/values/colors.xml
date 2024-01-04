@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="colorPrimary">#FFFFFFFF</color>
+    <color name="colorFace">#155EED</color>
+    <color name="color_main">#C6E5B3</color>
+    <color name="custom_green">#C6E5B3</color>
+    <color name="grey">#4DFFFFFF</color>
+    <color name="green">#89C464</color>
+    <color name="bg_viewpager">#F0F0F0</color>
+    <color name="bg_tabbar">#C6E5B3</color>
+    <color name="red">#FC111F</color>
+    <color name="main">#C6E5B3</color>
+    <color name="main_50">#80C6E5B3</color>
+    <color name="green1">#63AB37</color>
+    <color name="grey2">#cccccc</color>
+    <color name="green_light">#F7FEE2</color>
+    <color name="grey1">#717572</color>
+    <color name="green_camon">#E8FFDA</color>
+    <color name="bg_danhgia">#F7FEE2</color>
+    <color name="yellow">#FFE710</color>
+    <color name="grey_rating">#75D9D9D9</color>
+    <color name="green_dam">#63AB37</color>
+</resources>

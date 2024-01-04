@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".GiaothanhcongActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_chitietdonhang"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:gravity="center"
+                android:text="Chi tiết đơn hàng"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/relative_gioithieu"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_below="@+id/txt_chitietdonhang"
+                android:background="@color/green">
+
+                <RelativeLayout
+                    android:id="@+id/rela_motachuanbi"
+                    android:layout_width="257dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp">
+                    <TextView
+                        android:id="@+id/txt_dangvanchuyen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Giao hàng thành công"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+                        android:textColor="@color/white"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_dangvanchuyen"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/extralight"
+                        android:gravity="center"
+                        android:text="Đơn hàng: DH01. Vào ngày 18/11/2023 lúc 19:00pm."
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_truck"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_toRightOf="@+id/rela_motachuanbi"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/ic_delivered"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_giaohang"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/relative_gioithieu">
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="350dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:max="3"
+                    android:progress="3" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seekBar"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chờ xác nhận" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đang chuẩn bị"
+                        android:layout_marginLeft="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đang giao"
+                        android:layout_marginLeft="25dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thành công"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_thanks"
+                android:layout_width="350dp"
+                android:layout_height="110dp"
+                android:layout_below="@id/relative_giaohang"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border_thanks"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginVertical="5dp"/>
+                <RelativeLayout
+                    android:layout_width="210dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:id="@+id/txt_camon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cảm ơn bạn đã tin tưởng và đặt món tại cửa hàng chúng tôi!"
+                        android:layout_marginTop="4dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tuệ Duyên kính chúc quý khách dùng bữa ngon miệng."
+                        android:layout_below="@+id/txt_camon"
+                        android:layout_marginTop="8dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_thanks"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border_contact">
+                <TextView
+                    android:id="@+id/txt_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Liên hệ"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"/>
+
+                <RelativeLayout
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_contact"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/border_trang_vienden">
+                    <TextView
+                        android:id="@+id/txt_vande1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nếu có vấn đề về món ăn, hãy liên hệ với chúng tôi."
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_vande2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tuệ Duyên cam kết giải quyết nhanh và hợp lý cho bạn."
+                        android:layout_below="@id/txt_vande1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"/>
+                    
+                    <TextView
+                        android:layout_width="165dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/txt_vande2"
+                        android:text="Liên hệ chúng tôi"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/hcn_khungvien"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_khungdanhgia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative_contact"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border_contact">
+                <TextView
+                    android:id="@+id/txt_danhgia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đánh giá"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/relative_danhgia"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_danhgia"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/border_trang_vienden">
+                    <TextView
+                        android:id="@+id/txt_introduce_danhgia"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nếu không có bất kỳ vấn đề nào, xin hãy chia sẻ đánh giá của bạn về món ăn để chúng tôi có thể phục vụ bạn tốt hơn!"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:lineSpacingExtra="5dp"/>
+
+                    <TextView
+                        android:id="@+id/btnDanhgia"
+                        android:layout_width="165dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/txt_introduce_danhgia"
+                        android:text="Đánh giá"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/hcn_khungvien"
+                        android:gravity="center"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

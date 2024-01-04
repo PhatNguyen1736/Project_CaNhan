@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Tài khoản">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/thongtincanhan"
+                    android:icon="@drawable/user"
+                    android:title="Thông tin cá nhân"/>
+                <item android:id="@+id/diachigiaohang"
+                    android:icon="@drawable/address"
+                    android:title="Địa chỉ giao hàng"/>
+                <item android:id="@+id/phuongthucthanhtoan"
+                    android:icon="@drawable/credit_card"
+                    android:title="Phương thức thanh toán "/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Nhà hàng">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/diachinhahanggan"
+                    android:icon="@drawable/restaurant"
+                    android:title="Địa chỉ nhà hàng gần bạn"/>
+                <item android:id="@+id/chinhanhtoanquoc"
+                    android:icon="@drawable/address"
+                    android:title="Chi nhánh toàn quốc"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="Liên hệ và góp ý">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/lienhevagopy"
+                    android:icon="@drawable/mail"
+                    android:title="Liên hệ và góp ý"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="Chính sách giao hàng">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/chinhsachgiaohang"
+                    android:icon="@drawable/shipped"
+                    android:title="Chính sách giao hàng"/>
+                <item android:id="@+id/dieukhoan"
+                    android:icon="@drawable/policy"
+                    android:title="Điều khoản"/>
+
+            </group>
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+    <item android:id="@+id/button_dangxuat"
+        android:icon="@drawable/user"
+        android:title="Đăng xuất" />
+    </group>
+
+</menu>

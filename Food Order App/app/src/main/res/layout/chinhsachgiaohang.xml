@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChinhsachgiaohangActivity">
+
+    <LinearLayout
+        android:id="@+id/chinhsachgiaohang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/BG_chinhsachgiaohang"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/logo"/>
+        </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/BG_chinhsachgiaohang">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tx_chinhsachgiaohang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chính Sách Giao Hàng"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="15dp"
+                    android:text="Sau khi Khách hàng đặt đồ ăn Nhà hàng được đăng trên app, Ứng dụng sẽ chuyển tiếp đơn hàng đến Nhà hàng. Nhà hàng sẽ chuẩn bị đồ ăn và Đối tác giao hàng sẽ giao hàng sớm nhất có thể. Trong trường hợp thời gian giao hàng dài hơn dự kiến, công ty sẽ cố gắng liên hệ ngay với Khách hàng để thông báo." />
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="15dp"
+                    android:text="Chính sách hủy đơn hàng"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="15dp"
+                    android:text="Đơn hàng trên app không thể bị hủy sau khi hàng đã được giao cho Khách hàng. Khách hàng chỉ có thể hủy đơn hàng qua app khi trạng thái đơn hàng là “Sẵn sàng” trước khi thay đổi thành “Chuẩn bị”. Nếu Khách hàng muốn hủy đơn sau khi tình trạng của đơn hàng đó đổi thành”Chuẩn bị,” Khách hàng có thể liên hệ bộ phận Chăm Sóc Khách Hàng thông qua số điện thoại 0865093200 hoặc gửi email đến help@TueDuyen.vn. Bộ phận CSKH sẽ kiểm tra trạng thái đơn hàng sau khi nhận được yêu cầu hủy. Nếu đơn hàng chưa được nhà hàng chuẩn bị, Bộ phận CSKH có thể hủy đơn hàng. Đơn hàng đã được Nhà hàng chuẩn bị sẽ không thể hủy." />
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="15dp"
+                    android:text="Chính sách hoàn tiền"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="15dp"
+                    android:text="Tất cả thức ăn và đồ uống bán trên ứng dụng không được hoàn lại khi Khách hàng đã nhận được hàng, trừ khi không đúng món hàng hoặc món hàng bị hỏng. Đối với các món ăn được mua mà không đạt chất lượng, Công ty sẽ cố gắng hỗ trợ như được nêu trong “Giải quyết tranh chấp.”" />
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

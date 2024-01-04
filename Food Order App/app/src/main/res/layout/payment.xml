@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_light"
+    tools:context=".PaymentActivity">
+
+
+    <TextView
+        android:id="@+id/payment"
+        android:layout_width="365dp"
+        android:layout_height="47dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Phương thức thanh toán"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/payment" />
+
+    <View
+        android:id="@+id/tienMat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/rounded_green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/img_money"
+        android:layout_width="39dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/money"
+        app:layout_constraintStart_toStartOf="@id/tienMat"
+        app:layout_constraintTop_toTopOf="@id/tienMat" />
+
+    <ImageView
+        android:id="@+id/img_tick"
+        android:layout_width="39dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="17dp"
+        android:src="@drawable/accept_1"
+        app:layout_constraintEnd_toEndOf="@id/tienMat"
+        app:layout_constraintTop_toTopOf="@id/tienMat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="176dp"
+        android:text="Tiền mặt"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_tick"
+        app:layout_constraintTop_toTopOf="@id/tienMat" />
+
+    <View
+        android:id="@+id/momo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/rounded_green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tienMat" />
+    <ImageView
+        android:id="@+id/img_momo"
+        android:layout_width="39dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/momo"
+        app:layout_constraintStart_toStartOf="@id/momo"
+        app:layout_constraintTop_toTopOf="@id/momo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="228dp"
+        android:text="Ví Momo"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@id/momo"
+        app:layout_constraintTop_toTopOf="@id/momo" />
+
+    <View
+        android:id="@+id/bank"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/momo" />
+    <ImageView
+        android:id="@+id/img_credit"
+        android:layout_width="39dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/credit_card"
+        app:layout_constraintStart_toStartOf="@id/bank"
+        app:layout_constraintTop_toTopOf="@id/bank" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Thẻ tín dụng/Ghi nợ"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@id/img_credit"
+        app:layout_constraintTop_toTopOf="@id/bank" />
+
+    <!--    <Spinner-->
+    <!--        android:id="@+id/spinner_bank"-->
+    <!--        android:layout_width="39dp"-->
+    <!--        android:layout_height="25dp"-->
+    <!--        android:layout_marginEnd="20dp"-->
+    <!--        android:layout_marginTop="15dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/bank"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/bank"-->
+    <!--        android:background="@drawable/down_arrow"-->
+    <!--        android:spinnerMode="dropdown"/>-->
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

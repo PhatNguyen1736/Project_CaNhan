@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThemdiachimoiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/button_back"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_backbutton" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:text="Thêm địa chỉ mới"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tx_themdiachinha"
+                    android:layout_width="370dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/hcn_khungvien"
+                    android:drawablePadding="8dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:gravity="center"
+                    android:hint="Thêm địa chỉ nhà"
+                    android:textColor="@color/black"
+                    android:textSize="19dp" />
+
+                <ImageView
+                    android:id="@+id/img_location"
+                    android:layout_width="41dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="end|top"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/location"
+                    android:clickable="true"
+                    android:onClick="onLocationImageClick"/>
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/edit_diachichitiet"
+                android:layout_width="370dp"
+                android:layout_height="55dp"
+                android:hint="Địa chỉ chi tiết"
+                android:gravity="center"
+                android:background="@drawable/hcn_khungvien"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_Congnha"
+                android:layout_width="370dp"
+                android:layout_height="55dp"
+                android:hint="Cổng (không bắt buộc)"
+                android:gravity="center"
+                android:background="@drawable/hcn_khungvien"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tx_Chonnha"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="Nhà"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/hcn_trangthongtinkhac"
+                android:layout_marginRight="50dp"/>
+            <TextView
+                android:id="@+id/tx_Choncongty"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="Công ty"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/hcn_trangthongtinkhac"
+                android:layout_marginRight="50dp"/>
+            <TextView
+                android:id="@+id/tx_Chonkhac"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="Khác"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/hcn_trangthongtinkhac"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/edit_ghichuchotaixe"
+                android:layout_width="370dp"
+                android:layout_height="200dp"
+                android:hint="Ghi chú cho tài xế (không bắt buộc)"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/hcn_khungvien"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_themdiachigiaohang"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:background="@drawable/custom_button_white"
+            android:text="Thêm địa chỉ mới"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:layout_marginTop="120dp"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

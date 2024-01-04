@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@android:id/background">
+        <shape
+            android:shape="oval"
+            android:dither="true">
+            <corners android:radius="10dp" /> <!-- Đây là giá trị bo tròn góc, thay đổi theo ý muốn -->
+            <solid android:color="#D3D3D3" /> <!-- Màu nền của hình dạng -->
+        </shape>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape
+                android:shape="oval"
+                android:dither="true">
+                <corners android:radius="10dp" /> <!-- Đây là giá trị bo tròn góc, thay đổi theo ý muốn -->
+                <solid android:color="#000" /> <!-- Màu nền của hình dạng -->
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

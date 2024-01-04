@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_passActivity">
+
+    <LinearLayout
+        android:id="@+id/header_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_BGlogin"
+            android:layout_width="match_parent"
+            android:layout_height="237dp"
+            android:src="@drawable/background_login" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_login">
+
+        <LinearLayout
+            android:id="@+id/form_login_bangmk"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:background="@drawable/hcn"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/tieude_form"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tx_chaomung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Chào mừng bạn đến với"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tx_tennhahang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Nhà Hàng Tuệ Duyên"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tx_slogan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Hương vị thiên nhiên, sự lựa chọn của sức khỏe"
+                    android:textColor="#79000000"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nhapsdt_form"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/tieude_form">
+
+                    <EditText
+                        android:id="@+id/et_nhapuser"
+                        android:layout_width="370dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/hcn_login"
+                        android:drawableTint="#292A2B"
+                        android:ems="10"
+                        android:foreground="@color/color_main"
+                        android:foregroundTint="#C6E5B3"
+                        android:gravity="center"
+                        android:hint="Tên đăng nhập/Email"
+                        android:drawableLeft="@drawable/icon_user"
+                        android:inputType="text"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/et_nhapmk"
+                    android:layout_width="370dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hcn_login"
+                    android:drawableTint="#292A2B"
+                    android:ems="10"
+                    android:foreground="@color/color_main"
+                    android:foregroundTint="#C6E5B3"
+                    android:gravity="center"
+                    android:hint="Mật khẩu"
+                    android:inputType="textPassword"
+                    android:layout_marginTop="12dp"
+                    android:drawableLeft="@drawable/icon_lock"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dangnhap_form"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/nhapsdt_form">
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressbar"
+                    android:visibility="gone"/>
+                <Button
+                    android:id="@+id/button_dangnhap"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button_white"
+                    android:text="Đăng nhập"
+                    android:textColor="@color/black"
+                    android:textSize="19dp" />
+                <TextView
+                    android:id="@+id/tx_loginsdt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="8dp"
+                    android:paddingRight="5dp"
+                    android:text="Đăng nhập bằng số điện thoại"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hoac_form"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#989393" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:text="Hoặc"
+                    android:textColor="#989393" />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#989393" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/face_google_form"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <Button
+                        android:id="@+id/button_face"
+                        android:layout_width="370dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/custom_button_white"
+                        android:text="Đăng nhập bằng Facebook"
+                        android:drawablePadding="8dp"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:textColor="@color/black"
+                        android:textSize="19dp" />
+                    <ImageView
+                        android:id="@+id/img_face"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/facebook"
+                        android:layout_gravity="start|top" />
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <Button
+                        android:id="@+id/button_google"
+                        android:layout_width="370dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/custom_button_white"
+                        android:text="Đăng nhập bằng Google"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="19dp" />
+                    <ImageView
+                        android:id="@+id/img_google"
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="18dp"
+                        android:src="@drawable/google"
+                        android:layout_gravity="center_vertical" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
